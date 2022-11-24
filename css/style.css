@@ -1,0 +1,21 @@
+#titulo{
+    color: rgb(238, 105, 10);
+    font-size:70px;
+    margin-top: 4rem;
+    text-shadow: 0 0 0.2em rgb(3, 74, 214), 0 0 0.2em rgb(3, 74, 214),
+    0 0 0.2em rgb(3, 74, 214)
+}
+
+#cover{
+    width: 300px;
+    margin: 10px;
+}
+
+#boton_jugar{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    color: rgb(3, 74, 214);
+    background-color: rgb(238, 105, 10);
+    border-radius: 30px;
+}
