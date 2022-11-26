@@ -1,21 +1,19 @@
 #titulo{
     color: rgb(238, 105, 10);
     font-size:70px;
-    margin-top: 4rem;
     text-shadow: 0 0 0.2em rgb(3, 74, 214), 0 0 0.2em rgb(3, 74, 214),
     0 0 0.2em rgb(3, 74, 214);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
 
-#cover{
-    width: 300px;
-    margin: 10px;
+img{
+    width: 250px;
 }
 
 #boton_jugar{
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 75px;
     margin: 10px;
     color: rgb(3, 74, 214);
     background-color: rgb(238, 105, 10);
