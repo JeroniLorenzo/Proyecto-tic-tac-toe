@@ -1,0 +1,16 @@
+label{
+    color: antiquewhite;
+    background-color: black;
+    padding: 3px;
+}
+
+button{
+    color: rgb(3, 74, 214);
+    background-color: rgb(238, 105, 10);
+    border-radius: 30px;
+}
+#a_jugar{
+    color: antiquewhite;
+    background-color: black;
+    border-radius: 0px;
+}
