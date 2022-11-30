@@ -1,6 +1,6 @@
 label{
-    color: antiquewhite;
-    background-color: black;
+    color: rgb(3, 74, 214);
+    background-color: rgb(238, 105, 10);
     padding: 3px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -14,9 +14,13 @@ button{
     font-weight: 800;
 }
 #a_jugar{
-    color: antiquewhite;
-    background-color: black;
+    color: rgb(3, 74, 214);
+    background-color: rgb(238, 105, 10);
     border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+}
+#gifjugar{
+    width: 200px;
+    height: 150px;
 }
