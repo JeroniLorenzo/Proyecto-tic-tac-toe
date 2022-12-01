@@ -1,16 +1,20 @@
-td {
-    width: 150px;
-    height: 150px;
-    border: 4px solid rgb(238, 105, 10);
-    font-size: 60px;
-    color: antiquewhite;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-
+.tablero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#tablero {
-    border-radius: 9px;
-    background-color: rgb(3, 74, 214);
+.celda{
+    height: 150px;
+    width: 150px;
+    border: 1px solid;
+}
+
+.piezaX{
+    background-image: url(../img/X.jpeg);
+    background-size: 100% 100%;
+}
+
+.piezaO{
+    background-image: url(../img/O.jpeg);
+    background-size: 100% 100%;
 }
