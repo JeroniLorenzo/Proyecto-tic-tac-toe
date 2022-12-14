@@ -14,26 +14,22 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex mt-3 justify-content-center">
-                <div id="jugador1"class="col mt-5 d-flex justify-content-center">
+            <div class="col-12 d-flex mt-3 align-items-center justify-content-center">
+                <div id="jugador1" class="col mt-5 d-flex align-items-center justify-content-center">
                     <label for="nombre">Jugador 1</label>
-                    <input type="text" id="nombre1" name="nombre" placeholder="Nombre" />
+                    <div class="contenedorNombre"></div>
                 </div>
-                <div id="jugador1"class="col mt-5 d-flex justify-content-center">
-                    <label for="nombre">Turno</label>
-                    <input type="text" id="turno" name="turno" placeholder="turno" />
-                </div>
-                <div id="jugador1"class="col mt-5 d-flex justify-content-center">
+                <div id="jugador1" class="col mt-5 d-flex align-items-center justify-content-center">
                     <label for="nombre">Jugador 2</label>
-                    <input type="text" id="nombre2" name="nombre" placeholder="Nombre" />
+                    <div class="contenedorNombre"></div>
                 </div>
-            </div>
-            </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 d-flex mt-5 justify-content-center">
-              <div id="juego">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-12 d-flex mt-5 justify-content-center align-items-center">
+            <div id="juego">
                 <div class="tablero">
                     <div class="celda"></div>
                     <div class="celda"></div>
@@ -45,14 +41,19 @@
                     <div class="celda"></div>
                     <div class="celda"></div>
                 </div>
-              </div>
-            </div>
+            </div> 
         </div>
-        <div class="row">
-            <div class="col d-flex mt-3 justify-content-center">
-                <button id="volver">Volver a empezar</button>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex mt-3 justify-content-center align-items-center">
+            <a href="players.html"><button id="volver">Volver a empezar</button></a>
         </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div id="info" class="col d-flex m-3 justify-content-center align-items-center alert alert-info mt-3">Empieza el jugador 1</div>
+        </div>
+    </div>
     </div>
 
 
