@@ -14,39 +14,34 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div id="form"class="col mt-5 d-flex justify-content-center">
-               <form action="#" name="formInicio" id="formInicio">
-                <div class="col mt-3 d-flex justify-content-center">
-                    <label for="jugador1">Jugador 1</label>
-                    <input type="text" name="jugador1" id="jugador1">
+            <div class="col mt-5 d-flex justify-content-center">
+                <div id="form" class="col mt-5 d-flex justify-content-center">
+                    <form action="#" name="formInicio" id="formInicio">
+                        <div class="col mt-3 d-flex justify-content-center">
+                            <label for="jugador1">Jugador 1</label>
+                            <input type="text" name="jugador1" id="jugador1">
+                        </div>
+                        <div class="col mt-3 d-flex justify-content-center">
+                            <label for="jugador2">Jugador 2</label>
+                            <input type="text" name="jugador2" id="jugador2">
+                        </div>
+                        <div class="col mt-3 d-flex justify-content-center">
+                            <input type="button" value="A jugar!" id="enviar" onclick="ingresar()">
+                        </div>
+                    </form>
                 </div>
-                <div class="col mt-3 d-flex justify-content-center">
-                    <label for="jugador2">Jugador 2</label>
-                    <input type="text" name="jugador2" id="jugador2">
-                </div>
-                <div class="col mt-3 d-flex justify-content-center">
-                    <input type="button" value="Enviar" id="enviar" onclick="ingresar()">
-                </div>
-               </form>
-            </div>    
-        
-    
-        <div class="row">
-            <div class="col m-3 d-flex justify-content-center">
-               <img id="gifjugar"src="../img/letsplay.gif" alt="aJugar">
             </div>
         </div>
         <div class="row">
             <div class="col m-3 d-flex justify-content-center">
-                <a href="../pages/tablero.html"><button id="a_jugar">A jugar</button></a> 
+                <img id="gifjugar"src="../img/letsplay.gif" alt="aJugar">
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-        <script src="../js/cpu.js"></script>
+        <script src="../js/main.js"></script>
 </body>
 
 </html>

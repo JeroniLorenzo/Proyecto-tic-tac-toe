@@ -1,12 +1,20 @@
 const listaCeldas = document.querySelectorAll('.tablero .celda')
 let turno = true
-const movArray = new Array(9).fill(null)
-const ingresar = () => {
-    let jugador1 = document.getElementById('jugador1').value
-    let jugador2 = document.getElementById('jugador2').value
-    sessionStorage.setItem("jugador1", jugador1)
-    sessionStorage.setItem("jugador2", jugador2)
-}
+const movArray = new Array(8).fill(null)
+listaCeldas.forEach((celda, index) => {
+    celda.addEventListener('click', () => {
+        if (turno) {
+            celda.classList.add('piezaX')
+        } else {
+            celda.classList.add('piezaO')
+        }
+        movArray[index] = turno
+        if (combGanadora()) {
+            window.location = "../pages/ganador.html"
+        }
+        turno = !turno
+    }, { once: true })
+})
 const ganar = (i, j, k) => {
     if (movArray[i] == movArray[j] &&
         movArray[j] == movArray[k] &&
@@ -41,19 +49,16 @@ const combGanadora = () => {
     }
     return false
 }
+const ingresar = () => {
+    let jugador1 = document.getElementById("jugador1").value
+    let jugador2 = document.getElementById("jugador2").value
+    if(jugador1&&jugador2){
+         sessionStorage.setItem("jugador1", jugador1)
+    sessionStorage.setItem("jugador2", jugador2)
+    window.open('/pages/tablero.html', '_self')
+    document.getElementById("jugador1").value=""
+    document.getElementById("jugador2").value=""
+    }else alert('Primero dime el nombre de los jugadores')
+}
 
-listaCeldas.forEach((celda, index) => {
-    celda.addEventListener('click', () => {
-        if (turno) {
-            celda.classList.add('piezaX')
-        } else {
-            celda.classList.add('piezaO')
-        }
-        movArray[index] = turno
-        const posGanador = combGanadora()
-        if (posGanador) {
-            window.location = "../pages/ganador.html"
-        }
-        turno = !turno
-    }, { once: true })
-})
+
