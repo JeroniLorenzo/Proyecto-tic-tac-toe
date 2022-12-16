@@ -6,3 +6,11 @@ const mostrarNombre1 = ()=>{
 const mostrarNombre2 = ()=>{
     document.write(nombre2)
 }
+ const cambiarNombre = ()=>{
+     if(turno){
+         document.write(nombre1)
+     }else{
+        document.write(nombre2)
+    }
+    
+ }

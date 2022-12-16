@@ -8,12 +8,10 @@
 }
 
 img{
-    width: 250px;
+    width: 500px;
 }
 
 #boton_jugar{
-    width: 150px;
-    height: 75px;
     margin: 10px;
     color: rgb(3, 74, 214);
     background-color: rgb(238, 105, 10);
