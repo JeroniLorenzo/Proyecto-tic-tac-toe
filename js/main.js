@@ -1,5 +1,4 @@
 const listaCeldas = document.querySelectorAll('.tablero .celda')
-// let estadoTablero = ["","","","","","","",""]
 let turno = true
 const movArray = new Array(8).fill("")
 listaCeldas.forEach((celda, posicion) => {
@@ -12,10 +11,7 @@ listaCeldas.forEach((celda, posicion) => {
         movArray[posicion] = turno
         if (combGanadora()) {
              window.location = "../pages/ganador.html"
-           }//else alert('EMPATE')
-        // if(!movArray&&!combGanadora()){
-        //     return alert('EMPATE')
-        // }
+           }
         turno = !turno
     }, { once: true })
 })  
