@@ -1,11 +1,11 @@
 #titulo{
     color: rgb(238, 105, 10);
-    font-size:70px;
+    font-size:100px;
     margin-top: 4rem;
     text-shadow: 0 0 0.2em rgb(3, 74, 214), 0 0 0.2em rgb(3, 74, 214),
     0 0 0.2em rgb(3, 74, 214);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 #cover{
@@ -21,5 +21,5 @@
     background-color: rgb(238, 105, 10);
     border-radius: 30px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: bold;
 }
