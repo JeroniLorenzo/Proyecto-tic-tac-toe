@@ -48,17 +48,6 @@ label{
 
 }
 
-#jugar{
-    width: 100px;
-    height: 50px;
-    margin: 10px;
-    color: rgb(230, 140, 6);
-    background-color: rgb(27, 7, 201);
-    border-radius: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-}
-
 #juego{
     justify-content: center;
     font-family: "Permanent Marker", cursive;

@@ -1,7 +1,7 @@
 const listaCeldas = document.querySelectorAll('.tablero .celda')
 // let estadoTablero = ["","","","","","","",""]
 let turno = true
-const movArray = new Array(8).fill(null)
+const movArray = new Array(8).fill("")
 listaCeldas.forEach((celda, posicion) => {
     celda.addEventListener('click', () => {
        if (turno) {
@@ -12,21 +12,24 @@ listaCeldas.forEach((celda, posicion) => {
         movArray[posicion] = turno
         if (combGanadora()) {
              window.location = "../pages/ganador.html"
-        }turno = !turno
-        
+           }//else alert('EMPATE')
+        // if(!movArray&&!combGanadora()){
+        //     return alert('EMPATE')
+        // }
+        turno = !turno
     }, { once: true })
 })  
 
 const ganar = (i, j, k) => {
     if (movArray[i] == movArray[j] &&
         movArray[j] == movArray[k] &&
-        movArray[i] != null) {
+        movArray[i] != "") {
         return true
-    } else false 
-    //  let empate = !estadoTablero.includes('')
-    //       if(empate){
-    //           return alert('EMPATE')
-    //       }
+        }
+     let empate = !movArray.includes('')
+          if(empate){
+            window.location = "../pages/empate.html"
+          }
 }
 const combGanadora = () => {
     if (ganar(0, 1, 2)) {
@@ -64,4 +67,3 @@ const ingresar = () => {
         window.open('/pages/tablero.html')
     }else alert('Primero dime el nombre de los jugadores')
 }
-

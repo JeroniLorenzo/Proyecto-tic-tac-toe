@@ -6,21 +6,14 @@ label{
     font-weight: 800;
 }
 
-button{
-    color: rgb(3, 74, 214);
-    background-color: rgb(238, 105, 10);
-    border-radius: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+#gifjugar{
+    width: 400px;
+
 }
-#a_jugar{
+#enviar{
     color: rgb(3, 74, 214);
     background-color: rgb(238, 105, 10);
     border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-}
-#gifjugar{
-    width: 200px;
-    height: 150px;
 }
