@@ -60,6 +60,6 @@ const ingresar = () => {
     if(jugador1&&jugador2){
          sessionStorage.setItem("jugador1", jugador1)
         sessionStorage.setItem("jugador2", jugador2)
-        window.open('/pages/tablero.html')
+        window.open('../pages/tablero.html')
     }else alert('Primero dime el nombre de los jugadores')
 }
