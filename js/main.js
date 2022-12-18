@@ -8,7 +8,7 @@ listaCeldas.forEach((celda, posicion) => {
         } else {
             celda.classList.add('piezaO')
         }
-        movArray[posicion] = turno
+        movArray[posicion] = turno || !turno
         if (combGanadora()) {
              window.location = "../pages/ganador.html"
            }
