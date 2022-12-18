@@ -74,9 +74,9 @@ const mostrarNombres=()=>{
     const contNombre1 = document.querySelector('#contNombre1')
     const contNombre2 = document.querySelector('#contNombre2')
     const contTurno = document.querySelector('#contTurno')
-    let nombre1 = `<p>${sessionStorage.getItem('jugador1')}</p>`
-    let nombre2 = `<p>${sessionStorage.getItem('jugador2')}</p>`
-    let infoTurno =`<p>Empieza ${nombre1} y sigue ${nombre2}</p>`
+    let nombre1 = sessionStorage.getItem('jugador1')
+    let nombre2 = sessionStorage.getItem('jugador2')
+    let infoTurno = `Empieza ${nombre1} y sigue ${nombre2}`
     contNombre1.innerHTML = nombre1
     contNombre2.innerHTML = nombre2
     contTurno.innerHTML = infoTurno

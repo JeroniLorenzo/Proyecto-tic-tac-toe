@@ -73,12 +73,12 @@ label{
 }
 
 .nombreJs{
-    padding-top: 26px;
+    padding-top: 12px;
 
 }
 
 #contTurno{
     display: flex;
-    padding-top: 26px;
+    padding-top: 10px;
     width: 250px;
 }
