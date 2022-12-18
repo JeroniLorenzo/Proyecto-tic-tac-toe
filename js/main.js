@@ -58,12 +58,12 @@ const combGanadora = () => {
 const ingresar = ()=>{
     let jugador1 = document.querySelector('#jugador1').value
     let jugador2 = document.querySelector('#jugador2').value
-      if(jugador1.length>0 && jugador2.lenght>0){
+    //   if(jugador1.length>0 && jugador2.lenght>0){
         sessionStorage.setItem("jugador1", jugador1)
         sessionStorage.setItem("jugador2", jugador2)
         window.location = "../pages/tablero.html"
 
-      }else alert('Dime los nombres de los jugadores')
+    //   }else alert('Dime los nombres de los jugadores')
 }
 
 const importarNombres =()=>{
