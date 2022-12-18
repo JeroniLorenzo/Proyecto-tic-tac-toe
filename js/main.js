@@ -54,12 +54,30 @@ const combGanadora = () => {
     }
     return false
 }
-const ingresar = () => {
-    let jugador1 = document.getElementById("jugador1").value
-    let jugador2 = document.getElementById("jugador2").value
-    if(jugador1&&jugador2){
-         sessionStorage.setItem("jugador1", jugador1)
+
+const ingresar = ()=>{
+    let jugador1 = document.querySelector('#jugador1').value
+    let jugador2 = document.querySelector('#jugador2').value
+      if(jugador1.length>0 && jugador2.lenght>0){
+        sessionStorage.setItem("jugador1", jugador1)
         sessionStorage.setItem("jugador2", jugador2)
-        window.open('../pages/tablero.html')
-    }else alert('Primero dime el nombre de los jugadores')
+        window.location = "../pages/tablero.html"
+
+      }else alert('Dime los nombres de los jugadores')
+}
+
+const importarNombres =()=>{
+    mostrarNombres()
+}
+
+const mostrarNombres=()=>{
+    const contNombre1 = document.querySelector('#contNombre1')
+    const contNombre2 = document.querySelector('#contNombre2')
+    const contTurno = document.querySelector('#contTurno')
+    let nombre1 = `<p>${sessionStorage.getItem('jugador1')}</p>`
+    let nombre2 = `<p>${sessionStorage.getItem('jugador2')}</p>`
+    let infoTurno =`<p>Empieza ${nombre1} y sigue ${nombre2}</p>`
+    contNombre1.innerHTML = nombre1
+    contNombre2.innerHTML = nombre2
+    contTurno.innerHTML = infoTurno
 }

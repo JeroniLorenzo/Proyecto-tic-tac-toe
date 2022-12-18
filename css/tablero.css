@@ -71,3 +71,14 @@ label{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
+
+.nombreJs{
+    padding-top: 26px;
+
+}
+
+#contTurno{
+    display: flex;
+    padding-top: 26px;
+    width: 250px;
+}
