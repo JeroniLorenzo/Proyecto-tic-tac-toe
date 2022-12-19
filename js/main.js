@@ -28,11 +28,12 @@ const ganar = (i, j, k) => {
         movArray[j] == movArray[k] &&
         movArray[i] != null) {
         return true
-        }
-     let empate = !movArray.includes(null)
+    }else {
+         let empate = !movArray.includes(null)
           if(empate){
             window.location = "../pages/empate.html"
           }
+        }
 }
 const combGanadora = () => {
     if (ganar(0, 1, 2)) {
