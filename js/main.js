@@ -18,18 +18,17 @@ const mostrarNombres=()=>{
     contNombre2.innerHTML = nombre2
     contTurno.innerHTML = infoTurno
 }
-const importarNombres =()=>{
-    mostrarNombres()
-}
+
 const listaCeldas = document.querySelectorAll('.tablero .celda')
 let turno = true
 const ganar = (i, j, k) => {
-    if (movArray[i] == movArray[j] &&
-        movArray[j] == movArray[k] &&
-        movArray[i] != null) {
+    if (arrCeldas[i] == arrCeldas[j] &&
+        arrCeldas[j] == arrCeldas[k] &&
+        arrCeldas[i] != null) {
         return true
     }else {
-         let empate = !movArray.includes(null)
+       /* Checking if the array is full and if it is, it redirects to the empate page. */
+         let empate = !arrCeldas.includes(null)
           if(empate){
             window.location = "../pages/empate.html"
           }
@@ -60,9 +59,10 @@ const combGanadora = () => {
     if (ganar(6, 4, 2)) {
         return true
     }
-    return null
+    return false
 }
-const movArray = new Array(8).fill(null)
+/* Creating an array with 8 positions and filling them with "". */
+const arrCeldas = new Array(8).fill(null)
 listaCeldas.forEach((celda, posicion) => {
     celda.addEventListener('click', () => {
        if (turno) {
@@ -70,7 +70,7 @@ listaCeldas.forEach((celda, posicion) => {
         } else {
             celda.classList.add('piezaO')
         }
-        movArray[posicion] = turno
+        arrCeldas[posicion] = turno
         if (combGanadora()) {
              window.location = "../pages/ganador.html"
            }
