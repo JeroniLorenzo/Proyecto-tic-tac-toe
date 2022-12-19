@@ -20,11 +20,15 @@ const mostrarNombres=()=>{
 }
 
 const listaCeldas = document.querySelectorAll('.tablero .celda')
+
 let turno = true
-const ganar = (i, j, k) => {
-    if (arrCeldas[i] == arrCeldas[j] &&
-        arrCeldas[j] == arrCeldas[k] &&
-        arrCeldas[i] != null) {
+
+const arrCeldas = new Array(8).fill(null)
+
+const ganar = (pos1, pos2, pos3) => {
+    if (arrCeldas[pos1] == arrCeldas[pos2] &&
+        arrCeldas[pos2] == arrCeldas[pos3] &&
+        arrCeldas[pos1] != null) {
         return true
     }else {
          let empate = !arrCeldas.includes(null)
@@ -62,7 +66,7 @@ const combGanadora = () => {
     return false
 }
 
-const arrCeldas = new Array(8).fill(null)
+
 listaCeldas.forEach((celda, posicion) => {
     celda.addEventListener('click', () => {
        if (turno) {
