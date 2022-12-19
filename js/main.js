@@ -27,13 +27,13 @@ const ganar = (i, j, k) => {
         arrCeldas[i] != null) {
         return true
     }else {
-       /* Checking if the array is full and if it is, it redirects to the empate page. */
          let empate = !arrCeldas.includes(null)
           if(empate){
             window.location = "../pages/empate.html"
           }
         }
 }
+
 const combGanadora = () => {
     if (ganar(0, 1, 2)) {
         return true
@@ -61,7 +61,7 @@ const combGanadora = () => {
     }
     return false
 }
-/* Creating an array with 8 positions and filling them with "". */
+
 const arrCeldas = new Array(8).fill(null)
 listaCeldas.forEach((celda, posicion) => {
     celda.addEventListener('click', () => {
