@@ -19,3 +19,12 @@ img{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
+
+#contGanador{
+    color: rgb(238, 105, 10);
+    font-size:40px;
+    text-shadow: 0 0 0.2em rgb(3, 74, 214), 0 0 0.2em rgb(3, 74, 214),
+    0 0 0.2em rgb(3, 74, 214);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
