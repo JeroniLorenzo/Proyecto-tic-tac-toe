@@ -4,7 +4,6 @@ const ingresar = ()=>{
 
         sessionStorage.setItem("jugador1", jugador1);
         sessionStorage.setItem("jugador2", jugador2);
-        window.location = "../pages/tablero.html";
 }
 
 const mostrarNombres=()=>{
