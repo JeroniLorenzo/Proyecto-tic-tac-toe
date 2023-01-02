@@ -16,19 +16,13 @@ const ingresarCpu = ()=>{
         sessionStorage.setItem("jugador2", jugador2);
 }
 
-//Declaramos la función donde mostraremos los nombres previamente guardados.
+//Declaramos la función donde mostraremos los nombres previamente guardados. Y el mo
 const mostrarNombres=()=>{
     const contNombre1 = document.querySelector('#contNombre1');
     const contNombre2 = document.querySelector('#contNombre2');
     const contTurno = document.querySelector('#contTurno');
-    let modoJuego = sessionStorage.getItem('modoJuego');
-    if(modoJuego == "multijugador"){
-        nombre1 = sessionStorage.getItem('jugador1');
-        nombre2 = sessionStorage.getItem('jugador2');
-    }else if(modoJuego == "cpu"){
-        nombre1 = sessionStorage.getItem('jugador1');
-        nombre2 = sessionStorage.getItem('jugador2');
-    }
+    nombre1 = sessionStorage.getItem('jugador1');
+    nombre2 = sessionStorage.getItem('jugador2');
     let infoTurno = `Empieza ${nombre1}`
     contNombre1.innerHTML = nombre1;
     contNombre2.innerHTML = nombre2;
