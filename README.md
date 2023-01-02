@@ -4,7 +4,7 @@
 ## Lenguajes: JavaScript.
 
 ### En este proyecto he hecho un juego de 3 en raya.
-### La versión de este juego es de 6 casillas. Por tanto solo puede haber 1 ganador. Al final de la partida se mostrará la vista de ganador con el nombre del ganador en ella.
+### La versión de este juego es de 6 casillas. Nunca se acabará en empate. Al final de la partida se mostrará la vista de ganador con el nombre del ganador en ella.
 
 - Hay una primera vista principal de bienvenida al juego.
 
